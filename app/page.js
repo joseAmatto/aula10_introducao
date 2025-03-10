@@ -1,4 +1,4 @@
-'use client'
+//'use client'
 
 import { useState } from "react";
 import "./home.css"
@@ -36,11 +36,11 @@ export default function Home() {
                 <p> Cenoura </p>
                 <p> R$: 4,50 (kg)</p>
                 <button onClick={()=> setCarrinho()  }> Comprar </button>
-            </div>
+</div>
         </div>
 
 
-    );
+   );
 }
 
 
