@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./home.css"
 
-
+ //testando
 export default function Home() {
 
    let [carrinho, setCarrinho] = useState(0)
