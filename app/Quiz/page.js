@@ -36,7 +36,7 @@ function Quiz () {  // baixar estensor react e usar ffc no inicio de uma pagina.
     return (  
 
 
-      <div>
+      <div >
 
 
 
