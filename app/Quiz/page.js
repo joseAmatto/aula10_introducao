@@ -7,13 +7,25 @@ function Quiz () {  // baixar estensor react e usar ffc no inicio de uma pagina.
     // name para selecionar um campo especifico para ser selecionado.
     //onclick pro botão funcionar e colocar a função e soma pra ele se preciso.
     // useState permite alterar valores de contadores, entradas de formularios ou qualquer outro valor alterado.
-
+    // <input onChange={(e)=> alterap4(e.target.value)}/> , função para fazer questionario de texto.
 
 
 
     const [p1, alterap1] = useState(0)
     const [p2, alterap2] = useState(0)
+    const [p3, alterap3] = useState(0)
+    const [p4, alterap4] = useState("")
     const [total, alteraTotal] = useState(0)
+
+    function calculapontos(){
+      alteraTotal(p1+p2+p3)
+
+      if( p4 == "a mumia"){
+        alteraTotal(total + 1)
+      }else{
+        alteraTotal(p1+p2+p3)
+      }
+    }
     
 
 
@@ -57,7 +69,40 @@ function Quiz () {  // baixar estensor react e usar ffc no inicio de uma pagina.
             <label><input name="p2" type="radio" onChange={ ()=> alterap2(0)}/> D </label>
             <hr/>
 
-            <button onClick={()=> alteraTotal(p1 + p2)  }> enviar respostas </button>
+
+            <h2>Quanto é dois + 2?</h2>
+
+            <p onClick={ ()=> alterap3(0)}> 2 </p>
+            <p onClick={ ()=> alterap3(1)}> 4 </p>
+            <p onClick={ ()=> alterap3(0)}> 10 </p>
+            <p onClick={ ()=> alterap3(0)}> 6 </p>
+
+
+
+
+
+
+
+            <hr/>
+
+
+
+
+
+
+
+            <h2> qual é o mlehor filme do mundo? </h2>
+
+            <input onChange={(e)=> alterap4(e.target.value)}/> 
+
+
+
+            <hr/>
+
+
+
+
+            <button onClick={()=> calculapontos()}> enviar respostas </button>
 
             <p> Total de pontos: { total } </p>
 
