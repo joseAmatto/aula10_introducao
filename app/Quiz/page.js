@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import "./Quiz.css"
 
 function Quiz () {  // baixar estensor react e usar ffc no inicio de uma pagina.
     
@@ -17,11 +18,14 @@ function Quiz () {  // baixar estensor react e usar ffc no inicio de uma pagina.
     const [p4, alterap4] = useState("")
     const [total, alteraTotal] = useState(0)
 
+    const [selecionado, alteraSelecionado] = useState(["","","",""])
+    
+
     function calculapontos(){
       alteraTotal(p1+p2+p3)
 
       if( p4 == "a mumia"){
-        alteraTotal(total + 1)
+        alteraTotal(p1+p2+p3 + 1)
       }else{
         alteraTotal(p1+p2+p3)
       }
@@ -72,10 +76,10 @@ function Quiz () {  // baixar estensor react e usar ffc no inicio de uma pagina.
 
             <h2>Quanto é dois + 2?</h2>
 
-            <p onClick={ ()=> alterap3(0)}> 2 </p>
-            <p onClick={ ()=> alterap3(1)}> 4 </p>
-            <p onClick={ ()=> alterap3(0)}> 10 </p>
-            <p onClick={ ()=> alterap3(0)}> 6 </p>
+            <p className={selecionado [0]} onClick={ ()=> {alterap3(0); alteraSelecionado(["selecionado","","",""])} }> 2 </p>
+            <p className={selecionado [1]} onClick={ ()=> {alterap3(1); alteraSelecionado(["","selecionado","",""])} }> 4 </p>
+            <p className={selecionado [2]} onClick={ ()=> {alterap3(0); alteraSelecionado(["","","selecionado",""])} }> 10 </p>
+            <p className={selecionado [3]} onClick={ ()=> {alterap3(0); alteraSelecionado(["","","","selecionado"])} }> 6 </p>
 
 
 
@@ -91,7 +95,7 @@ function Quiz () {  // baixar estensor react e usar ffc no inicio de uma pagina.
 
 
 
-            <h2> qual é o mlehor filme do mundo? </h2>
+            <h2> qual é o melhor filme do mundo? </h2>
 
             <input onChange={(e)=> alterap4(e.target.value)}/> 
 
