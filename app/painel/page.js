@@ -14,7 +14,7 @@ import "./painel.css"
     
 
     function logar (){
-        if(alteraUsuario == jose && alteraSenha == 1234){
+        if(usuario == jose && senha == 1234){
 
            mostraErro(false)
             
