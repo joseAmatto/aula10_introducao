@@ -11,13 +11,23 @@ import "./painel.css"
     const [senha, alteraSenha] = useState("")
 
     const [mostraErro, alteraMostraErro] = useState(false)
-    const [mostraAprovado, alteraMostraAprovado] = useState (false)
+<<<<<<< HEAD
+const [mostraAprovado, alteraMostraAprovado] = useState (false)
+    
+
+function logar (){
+    if(usuario == "jose" && senha == "1234"){
+
+        alteraMostraErro(false)
+=======
+    const [mostraAprovado, alteraMostraAprovado] = useState(false)
     
 
     function logar (){
-        if(usuario == "jose" && senha == "1234"){
+        if(usuario === jose && senha === 1234){
 
-            alteraMostraErro(false)
+           alteraMostraErro(false)
+>>>>>>> e77d6dc77e2e8a3e306051dad540ff861eb660e1
            alteraMostraAprovado(true)
             
 
@@ -83,6 +93,7 @@ import "./painel.css"
                 
                   <div></div>
 
+<<<<<<< HEAD
             }  {
 
                  mostraAprovado == true?
@@ -94,6 +105,18 @@ import "./painel.css"
                 :
 
                   <div></div>
+=======
+            } {
+
+                mostraAprovado == true?
+
+                   <div className="aprovado">
+                               <p>Aprovado</p>
+
+
+                 
+                  </div>
+>>>>>>> e77d6dc77e2e8a3e306051dad540ff861eb660e1
             }
 
            
