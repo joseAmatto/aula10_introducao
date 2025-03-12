@@ -25,13 +25,22 @@ function Quiz2 () {  // baixar estensor react e usar ffc no inicio de uma pagina
     
 
     function calculapontos(){
-      alteraTotal(p1+p2+p3)
+
+      let totalAtualizado = 0
 
       if( p4 == "a mumia"){
-        alteraTotal(p1+p2+p3 + 1)
+        totalAtualizado = p1+p2+p3+1
+        alteraTotal(totalAtualizado)
+
       }else{
-        alteraTotal(p1+p2+p3)
+        totalAtualizado = p1+p2+p3
+        alteraTotal(totalAtualizado)
+
       }
+
+      localStorage.setItem("total", totalAtualizado)
+
+      
     }
     
 
