@@ -19,54 +19,20 @@ function QuizSenac() {
 
           <br />
           <div className="container">
-            <div className="opcao">
-              <button
-                name="p1"
-                className={selecionado[0]}
-                onClick={() => {
-                  setP1(1);
-                  setSelecionado(["selecionado", "", "", ""]);
-                }}
-              >
-                Pikachu
-              </button>
-            </div>
-            <div className="opcao">
-              <button
-                name="p1"
-                className={selecionado[1]}
-                onClick={() => {
-                  setP1(0);
-                  setSelecionado(["", "selecionado", "", ""]);
-                }}
-              >
-                Gengar
-              </button>
-            </div>
-            <div className="opcao">
-              <button
-                name="p1"
-                className={selecionado[2]}
-                onClick={() => {
-                  setP1(0);
-                  setSelecionado(["", "", "selecionado", ""]);
-                }}
-              >
-                Ratata
-              </button>
-            </div>
-            <div className="opcao">
-              <button
-                name="p1"
-                className={selecionado[3]}
-                onClick={() => {
-                  setP1(0);
-                  setSelecionado(["", "", "", "selecionado"]);
-                }}
-              >
-                Beedril
-              </button>
-            </div>
+            
+                    <div className="opcao">
+                        <button name="p1" className={selecionado[0]} onClick={()=>{ setP1(1); setSelecionado(["selecionado","","",""])}}> Pikachu </button>
+                    </div>
+                    <div className="opcao">
+                        <button name="p1" className={selecionado[1]} onClick={()=>{ setP1(0); setSelecionado(["","selecionado","",""])}}> Gengar </button>
+                    </div>
+                    <div className="opcao">
+                        <button name="p1" className={selecionado[2]} onClick={()=>{ setP1(0); setSelecionado(["","","selecionado",""])}}> Ratata </button>
+                    </div>
+                    <div className="opcao">
+                        <button name="p1" className={selecionado[3]} onClick={()=>{ setP1(0); setSelecionado(["","","","selecionado"])}}> Beedril </button>
+                    </div>
+            
           </div>
           <button className="enviar">Enviar</button>
         </div>

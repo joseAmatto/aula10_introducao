@@ -1,8 +1,8 @@
 .selecionado {
-    color: blue;
+    color: white;
     border: 1px solid grey;
     padding: 10px;
-    background-color: white;
+    background-color: #000080;
   }
   
   body {
@@ -29,6 +29,7 @@
   .opcao {
     padding: 10px;
     margin: 0 10px; /* Ajusta o espaço lateral entre os botões */
+
   }
   
   .alinha-imagem {
@@ -41,7 +42,7 @@
     align-items: center;
     color: white;
     padding: 20px 30px;
-    gap: 20px; /* Espaço entre as opções */
+    gap: 80px; /* Espaço entre as opções */
   }
   
   img {
