@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import "./Quiz.css"
+import Menu from "../produtos/components/Menu";
+
 
 function Quiz2 () {  // baixar estensor react e usar ffc no inicio de uma pagina.
     
@@ -53,9 +55,11 @@ function Quiz2 () {  // baixar estensor react e usar ffc no inicio de uma pagina
       <div >
 
 
-
+            <Menu/>
 
             <h1> Quiz conradito </h1>
+
+
             <p> assina-le a opção correta! </p>
 
             <p>Total de pontos de todo mundo: { localStorage.getItem("total") } </p>
