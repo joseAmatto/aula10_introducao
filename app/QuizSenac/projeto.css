@@ -1,54 +1,164 @@
-.selecionado {
-    color: white;
-    border: 1px solid grey;
-    padding: 10px;
-    background-color: #000080;
-    cursor: pointer;
-  }
-  
-  body {
-    background-color: red;
-  }
-  
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  
-  h2 {
-    color: white;
-  }
-  
-  .enviar {
-    background-color: white;
-    padding: 5px;
-    margin-top: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    
-  }
-  
-  .opcao {
-    padding: 10px;
-    margin: 0 10px; /* Ajusta o espaço lateral entre os botões */
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+                
 
-  }
-  
-  .alinha-imagem {
+
+body{
+    background: rgb(255,101,25);
+    background: linear-gradient(90deg, rgba(255,101,25,1) 0%, rgba(255,42,10,1) 35%, rgba(254,16,16,1) 100%);
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 5px;
+    padding: 0px;
+    
+}
+
+h1{
+    color: #FFC905;
     text-align: center;
-  }
-  
-  .container {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #3A5CA4;
+    font-size: 80px;
+    margin: 2px;
+    padding: 0px;
+    text-shadow:  
+      -1px 1px 0 #2f5d87, 
+      -2px 2px 0 #2e5a83, 
+      -3px 3px 0 #2d5880, 
+      -4px 4px 0 #2b557c, 
+      -5px 5px 0 #2a5378, 
+      -6px 6px 0 #295074, 
+      -7px 7px 0 #274d71, 
+      -8px 8px 0 #264b6d, 
+      -9px 9px 0 #254869, 
+      -10px 10px 0 #234665, 
+      -10px 11px 11px rgba(0, 0, 0, 0.55), 
+      -11px 11px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+h3{
+    color: #FFC905;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #3A5CA4;
+    font-size: 80px;
+    margin: 2px;
+    padding: 0px;
+    text-shadow:  
+      -1px 1px 0 #2f5d87, 
+      -2px 2px 0 #2e5a83, 
+      -3px 3px 0 #2d5880, 
+      -4px 4px 0 #2b557c, 
+      -5px 5px 0 #2a5378, 
+      -6px 6px 0 #295074, 
+      -7px 7px 0 #274d71, 
+      -8px 8px 0 #264b6d, 
+      -9px 9px 0 #254869, 
+      -10px 10px 0 #234665, 
+      -10px 11px 11px rgba(0, 0, 0, 0.55), 
+      -11px 11px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.enviar{
+    background-color: #3A5CA4;
+    color: #FFC905;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: none;
+
+}
+
+.opcao{
+    padding: 15px;
+    margin: 20px;
+    
+}
+
+.alinha-imagem{
+    text-align: center;
+}
+
+.container{
     display: flex;
-    justify-content: center; /* Centraliza as opções */
     align-items: center;
     color: white;
     padding: 20px 30px;
-    gap: 80px; /* Espaço entre as opções */
-  }
-  
-  img {
-    width: 300px; /* Define um tamanho fixo para a imagem */
-    height: auto;
-    margin-bottom: 20px; /* Espaço entre a imagem e as opções */
-  }
+    justify-content: center;
+    width: 100%;
+    border-right: 50px;
+    flex-direction: row;
+}
+
+
+
+h2{
+    color: #FFC905;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #3A5CA4;
+    font-size: 80px;
+    margin: 2px;
+    padding: 0px;
+    text-shadow:  
+      -1px 1px 0 #2f5d87, 
+      -2px 2px 0 #2e5a83, 
+      -3px 3px 0 #2d5880, 
+      -4px 4px 0 #2b557c, 
+      -5px 5px 0 #2a5378, 
+      -6px 6px 0 #295074, 
+      -7px 7px 0 #274d71, 
+      -8px 8px 0 #264b6d, 
+      -9px 9px 0 #254869, 
+      -10px 10px 0 #234665, 
+      -10px 11px 11px rgba(0, 0, 0, 0.55), 
+      -11px 11px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+button{
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #3A5CA4;
+    letter-spacing: 5px;
+    box-shadow: 10px 10px #3A5CA4;
+    font-size: 30px;
+    padding: 35px;
+    background-color: #FFC905;
+    box-sizing: border-box;
+    border-radius: 180px;
+    flex-direction: row;
+    border: none;
+    
+}
+
+.selecionado{
+    background-color: #d1a400;
+}
+
+h1 button{
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #3A5CA4;
+    letter-spacing: 5px;
+    box-shadow: 10px 10px #3A5CA4;
+    font-size: 30px;
+    padding: 35px;
+    background-color: #FFC905;
+    box-sizing: border-box;
+    border-radius: 180px;
+    border: none;
+    justify-content: center;
+    display: flex;
+}
+
+.inicio{
+    margin: 80px;
+}
+
+.inicio button{
+    color:#3A5CA4 ;
+}
+
+.pok{
+    width: 700px;
+}
