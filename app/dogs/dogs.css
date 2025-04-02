@@ -1,0 +1,13 @@
+body{
+    background-color: blueviolet;
+    color: white;
+}
+
+.text{
+    text-align: center;
+}
+
+.button{
+   align-content: center;
+   text-align: center;
+}
